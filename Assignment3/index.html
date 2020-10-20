@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms & Navigation</title>
+        <meta charset="UTF-8">
+        <style>
+            input[type=submit]{
+                width: 20%;
+                padding: 5px;
+            }
+
+            input{
+                width: 50%;
+                padding: 5px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            form {
+                text-align: center;
+            }
+            footer{
+                left: 45%;
+                bottom: 20px;
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align = 'center'>Sign Up</h1>
+        <form action="main.html">
+            <input type="text" name="name" placeholder="Uername*" required />
+            <input type="email" name="email" placeholder="Email Address*" required />
+            <input type="password" name="password" placeholder="Password*" required />
+            <input type="tel" maxlength="10" name="contact" placeholder="Without prefix +91 or 0 ,i.e., 9876543210" />
+            <br/>
+            <input type="submit" name="submit" value="SIGN UP" />
+        </form>
+        <footer align='center'> <span style="color: red;">Love</span> with CodeQuotient - Priyanshu Goel</footer>
+    </body>
+</html>
