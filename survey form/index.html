@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+             <h1>CodeQuotient Survey Form</h1>
+            <p><i>Thank you for taking the time to help us improve the platform</i></p>
+        </header>
+        <div class="form-info">
+            <form action="#" method="POST">
+                <div class="info">
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="info">
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Enter your Email" name="email" required>
+                </div>
+                <div class="info">
+                    <label>Age(optional)</label><br>
+                    <input type="text" placeholder="Age" name="age">
+                </div>
+                <div class="info">
+                    <label>Which option best describes your current role?</label><br>
+                    <select name="describe" required>
+                        <option value="select">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job-seeker">Job Seeker</option>
+                        <option value="job-holder">Full Time Job Role</option> 
+                    </select>
+                </div>
+                <div class="info">
+                    <label>Would you recommend CodeQuotient to a friend?</label><br>
+                    <input type="radio" name="recommend" value="definitely">
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" name="recommend" value="notsure">
+                    <label for="notsure">Not Sure</label>
+                </div>
+                <div class="info">
+                    <label>In which area you are interested</label><br>
+                    <input type="checkbox" name="interested" value="ds">
+                    <label for="ds">Data Structure</label><br>
+                    <input type="checkbox" name="interested" value="cc">
+                    <label for="cc">Cloud Computing</label><br>
+                    <input type="checkbox" name="interested" value="ml">
+                    <label for="ml">Machine Learning</label>
+                </div>
+                <div class="info">
+                    <label>Any Comments or Suggestions?</label><br>
+                    <textarea placeholder="Enter your comment here..." rows="7"></textarea>
+                </div>
+                <div class="info">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
