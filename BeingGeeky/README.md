@@ -7,13 +7,18 @@ Being Geeky - Fully Responsive Project
 
 #Laptop View -
 
+
+Home Page
 ![Home Page](https://github.com/goel28priyanshu/CodeQuotientProject/blob/main/images/1.png)
 
+Footer View
 ![Footer View](https://github.com/goel28priyanshu/CodeQuotientProject/blob/main/images/2.png)
 
 #Mobile View -
 
+Home Page
 ![Home Page](https://github.com/goel28priyanshu/CodeQuotientProject/blob/main/images/3.png)
 
+Footer View
 ![Footer View](https://github.com/goel28priyanshu/CodeQuotientProject/blob/main/images/4.png)
 
