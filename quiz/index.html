@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Quizzare</title>
+        <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar-custom">
+                <h2 id="head">Quiz</h2>
+            </div>
+        </header>
+
+        <div id="b">
+
+        <h1 id="topHead">Answer Key</h1>
+
+        <main>
+            <form id="option">
+                <h2 id="ques"></h2>
+                <input type="radio" name="opt" id="op1" value="a"/>
+                <label for="op1" id="opt1"></label><br/>
+                <input type="radio" name="opt" id="op2" value="b"/>
+                <label for="op2" id="opt2"></label><br/>
+                <input type="radio" name="opt" id="op3" value="c"/>
+                <label for="op3" id="opt3"></label><br/>                
+                <input type="radio" name="opt" id="op4" value="d"/>
+                <label for="op4" id="opt4"></label><br/>              
+            </form>
+            <h3 id="result">Correct</h3>
+            <button id="submit">Submit</button>
+
+            <ul id="ul">
+            </ul>
+        </main>
+
+        <button id="restart" onclick="window.location.reload();">Restart</button>
+
+        <footer>
+            Made in <span>❤</span> with India
+        </footer>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
