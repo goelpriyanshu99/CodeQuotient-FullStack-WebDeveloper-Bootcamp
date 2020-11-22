@@ -1,0 +1,27 @@
+ body {
+    background-color: #ccffff;
+}
+.list{
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    background: #6d5813;
+    padding: 15px;
+    width: 70%;
+    color: #fff;
+}
+#input_todo
+{
+    border-radius: 10px;
+    display: block;
+    margin: 0px auto;
+    width:70%;
+    height:15%;
+    font-size: 25px;
+    padding: 10px;
+    font-weight:bold;
+}
+
+li{
+    font-size:40px;
+}
