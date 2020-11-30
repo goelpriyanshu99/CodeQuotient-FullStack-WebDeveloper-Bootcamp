@@ -1,0 +1,141 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+#small {
+    display: none;
+}
+#alert1, #alert2, #alert3, #alert4 {
+    margin: 0px;
+    display: none;
+    padding-left: 10px;
+    color: rgb(224, 30, 30);
+}
+#alert1 > p ,#alert2 > p ,#alert3 > p ,#alert4 > p {
+    display: inline-block;
+}
+header {
+    background-color: #009688;
+    padding: 10px 0px;
+    color: #fff;
+    width: 100%;
+} 
+header h2 {
+    margin-left: 10px;
+}
+#left {
+    width: 40%;
+    /* display: inline-block; */
+    float: left;
+}
+.buttons {
+    padding: 30px 0px;
+    padding-left: 10px;
+}
+#search {
+    margin-left: 30px;
+    padding: 4px;
+ }
+#submit {
+    padding: 4px;
+    margin-left: -6px;
+    cursor: pointer;
+}
+#new, #add, #detail > button, #done {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#new:active, #add:active, #detail > button:active, #done:active {
+    background-color: #006db3;
+}
+#queries {
+    background: #ddd;
+    min-height: 650px;
+    height: auto;
+}
+.vl {
+    /* display: inline-block; */
+    border-left: 2px solid #ccc;
+    height: 94%;
+    position: absolute;
+    left: 40%;
+}
+hr {
+    color: #ccc;
+}
+#right {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    /* background-color: #ccc; */
+    width: 40%;
+    padding: 20px;
+}
+#raise_q p {
+    margin: 10px 0px;
+}
+#title_q, #res_name {
+    padding: 5px;
+    border: 2px solid #ccc;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+#desc, #comment {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 5px;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+}
+#add, #detail > button, #done{
+    float: right;
+    margin: 5px -10px;
+}
+.disp {
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    display: block;
+    padding: 10px;
+    padding-left: 15px;
+}
+#show_query {
+    display: none;
+    color: #ccc;
+}
+#detail > div {
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    margin: 7px 0px;
+    border: 2px solid #ccc;
+    color: #000;
+}
+#response, #response > h2  {
+    margin: 10px 0px;
+}
+#response > div > div > div {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    color: black;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+}
+@media all and (max-width : 945px) {
+    #large {
+        display: none;
+    }
+    #small > img {
+        width:50%;
+    }
+    #small {
+        display: block;
+        text-align: center;
+        margin-top: 20%;
+    }
+}
