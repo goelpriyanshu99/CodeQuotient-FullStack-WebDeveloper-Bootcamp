@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Discussion App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="large">
+        <header>
+            <h2>Discussion Portal</h2>
+        </header>
+        
+        <div id = "left">
+            <div class="buttons">
+                <button onclick="new_ques()" id="new">New Question</button>
+                <input type="text" placeholder =  "Search Questions" id="search" /> 
+                <button type="submit" id="submit"><i class="fa fa-search"></i></button>                    
+            </div>
+            <hr>
+            <div id="queries">
+            </div>
+        </div>
+
+        <pre class="vl"></pre>
+        <div id="right">
+
+            <div id = "raise_q">
+                <h1>Welcome to Discussion Portal !</h1>
+                <p>Enter a title and its description to get started</p>
+                <input type="text" id="title_q" placeholder="Title" required> 
+                <div id="alert1">
+                    <i class="material-icons">warning</i>
+                    <p>Title is mandatory</p>
+                </div><br/>
+                <textarea id = "desc" placeholder="Description" rows="8" required></textarea> 
+                 <div id="alert2">
+                    <i class="material-icons">warning</i>
+                    <p>Description is mandatory</p>
+                </div>
+                <input type="submit" id="add" value="Submit" />
+            </div>
+
+            <div id="show_query">
+                <div id="detail">
+                    <h2>Question</h2>
+                    <div>
+                        <h2 id="show_title"></h2>
+                        <p id="show_desc"></p>
+                    </div>
+                    <button id="resolve" onclick="reso()">Resolve</button>
+                </div>
+                <br>
+                <div id="response">
+                    <h2>Response</h2>
+                    <div id="show">
+                        <!-- <h2 id="show_name"></h2>
+                        <p id="show_comment"></p> -->
+                    </div>
+                </div>
+                <div id="answer">
+                    <h1>Add Response</h1>
+                        <input type="text" id="res_name" placeholder="Enter Name" required> 
+                 <div id="alert3">
+                    <i class="material-icons">warning</i>
+                    <p>Name is mandatory</p>
+                </div><br/>   
+                <textarea id = "comment" placeholder="Enter comment" rows="5" required></textarea> 
+                 <div id="alert4">
+                    <i class="material-icons">warning</i>
+                    <p>Comment is mandatory</p>
+                </div>
+                <button type="submit" id="done">Submit</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="small">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F0%2F6%2F5%2F1494989-emoji-wallpapers-boys-2560x1440-for-ipad-2.jpg&f=1&nofb=1" alt="SadImage">
+            <h1>Not recommendable on your device</h1>
+            <h3>Please Use Desktop to see it. We are working for your device also.</h3>
+            <br/>
+            <h2>Thank You :) </h2>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
