@@ -30,6 +30,7 @@ function handleInput(event)
 {
     if( event.keyCode === 13 )
     {
+        event.preventDefault();
         
         createTodo(input_todo.value);
 
