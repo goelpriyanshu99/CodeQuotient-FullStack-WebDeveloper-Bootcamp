@@ -5,7 +5,7 @@
 [Project Link](https://s12-3p34g896sokht51mfi-3p34g896sokht51mfv.web.codequotient.com)
 
 
-V1.2.0 Issue resolved which makes placeholder again on pressing Enter
+V1.2.0 Issue resolved which makes placeholder back to its default situation again on pressing Enter
 
 
 ## Issues
