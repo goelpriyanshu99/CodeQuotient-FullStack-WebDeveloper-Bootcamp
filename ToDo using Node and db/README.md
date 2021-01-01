@@ -22,6 +22,6 @@ The server side code is written in Node.js in index.js file
 
 4. Go to browser and search "localhost:2825" (port: 2825)
 
-5. Note: If error at the port change it to anything else and do step 3 again.
+5. Note: If error at the port change it to anything else(line 202 index.js) and do step 3 again.
 
 6. You are good to go now.
