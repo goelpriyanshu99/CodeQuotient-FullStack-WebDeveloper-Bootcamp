@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>E-commerce</title>
+</head>
+<body onload="refresh()">
+    <div class="header">
+        <a href="/" id="home"><i class="material-icons">home</i></a>
+        <!-- <input type="text" name="search" id="search" placeholder="Search..."> -->
+        <a href = "cart.html"><i class="fa fa-shopping-cart" style="font-size:26px"></i> &nbsp; Cart</a>
+    </div>
+    <br>
+    <h3 align="center">Home</h3>
+    <div id="main">
+        
+    </div>
+
+    <div id="item-desc" class="flex-container-center">
+        <h2>Product Description</h2>
+        <span id="close">&times;</span>
+        <br>
+        <hr>
+        <img id="item-img" src="" alt="Product Image">
+        <br><br>
+        <p id="desc"></p>
+        <br>
+        <button class="desc-button btn-success"></button>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
