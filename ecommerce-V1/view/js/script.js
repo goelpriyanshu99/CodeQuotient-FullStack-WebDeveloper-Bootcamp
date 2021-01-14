@@ -2,13 +2,18 @@ var main = document.getElementById("main");
 var main_cart = document.getElementById("main_cart");
 var close = document.getElementById("close");
 var pop = document.getElementById("item-desc");
+var modal = document.getElementsByClassName("modal")[0];
+
 var request = new XMLHttpRequest();
 var STATUS_OK = 200;
 
-close.addEventListener("click", function()
+close.addEventListener("click", abc);
+
+function abc()
 {
+    modal.style.display = "none";
     pop.style.display = "none";
-})
+}
 
 function refresh()
 {
@@ -122,6 +127,7 @@ function desc(id, opt)
         var desc = document.getElementById("desc");
         
         set_desc_button(res["add"], id, opt);
+        modal.style.display  = "block";
         img.setAttribute('src', res["img"]);
         desc.innerText = res["desc"];
         pop.style.display = "block";
@@ -267,6 +273,7 @@ function removeCart(id)
         if(!res["add"])
             main_cart.removeChild(id);
             pop.style.display = "none";
+        abc();
     }
 }
 
