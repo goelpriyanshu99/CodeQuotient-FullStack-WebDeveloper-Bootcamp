@@ -83,7 +83,7 @@ function appendData(id, imge, name, price, cart)
 
 function cart(id)
 {
-    id = id.id;
+    id = id.id??id;
     request.open('POST','/status');
     request.send(JSON.stringify({id: id}));
 
@@ -104,7 +104,7 @@ function cart(id)
                 node.setAttribute("class","btn btn-success");
                 node.innerHTML = "Add to cart";
             }
-            set_desc_button(str['add'], id);
+            set_desc_button(str['add'], id, 1);
         }
     }
 }
@@ -130,7 +130,7 @@ function desc(id, opt)
 
 function set_desc_button(added, id, opt)
 {
-    id = id.id;
+    id = id.id??id;
     var btn = document.getElementsByClassName("desc-button btn-success")[0] ?? document.getElementsByClassName("desc-button btn-danger")[0] ;        
     if(added)
     {
@@ -257,8 +257,9 @@ function appendCartData(id, imge, name, price, qty)
 
 function removeCart(id)
 {
+    var i = id.id??id;
     request.open('POST','/status');
-    request.send(JSON.stringify({id: id.id}));
+    request.send(JSON.stringify({id: i}));
 
     request.onload = function()
     {
