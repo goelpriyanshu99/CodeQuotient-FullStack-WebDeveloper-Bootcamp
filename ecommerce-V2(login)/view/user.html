@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color:rgba(216, 168, 106, 0.514)" onload="user()">
+    <div id="loginUser">
+        <h2 style="margin-bottom: 10px;">Login</h2>
+        <input type="email" name="email" id="logemail" placeholder="Enter your email" required> <br/>
+        <input type="password" name="password" id="logpassword" placeholder="Enter your password" required><br/>
+        <a class="btn btn-success" onclick="userLogin()" style="margin-bottom:10px; display: inline-block;">Login</a>
+        <a href="/" class="btn btn-primary" style="margin-top: -10px; margin-left: 3%;">Home</a><br>
+        Don't have account? <a onclick="doRegister()" style="cursor: pointer; color:rgb(28, 119, 238);">Register here</a>
+    </div>
+
+    <div id="detUser">
+        <h2 style="margin-bottom: 10px;">Details</h2>
+        <strong><label for="name">Name</label></strong>
+        <input type="text" name="name" id="username" disabled><br/>
+        <strong><label for="email">E-Mail</label></strong>
+        <input type="email" name="email" id="useremail" disabled> <br/>
+        <a class="btn btn-success" href="/" style="margin-bottom:10px;">Home</a><br>
+    </div>
+
+    <div id="register">
+        <h2>Register</h2>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br/>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required><br/>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required><br/>
+        <input type="password" name="conPass" id="confirm" placeholder="Re-enter your password" required><br/>
+        <button onclick="userRegister()" class="btn btn-success"  style="margin-bottom:10px;">Register</button>
+        <a href="/" class="btn btn-primary" style="margin-top: -10px; margin-left: 3%;">Home</a><br>
+        Have an account? <a onclick="doLogin()" style="cursor: pointer; color:rgb(28, 119, 238);">Login</a>
+    </div>
+</body>
+<script src="js/user.js"></script>
+</html>

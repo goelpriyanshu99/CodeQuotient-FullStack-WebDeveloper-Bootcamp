@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>E-commerce</title>
+</head>
+<body onload="refresh_cart()">
+    <div class="header">
+        <strong><h4 id="userHead" style="float: left; color: white;"></h4></strong>
+        <div style="float:right; display: flex;">
+            <a href="/" id="home"><i class="material-icons" style="font-size: 25px;">home</i></a>
+            <a href = "cart.html"><i class="fa fa-shopping-cart" style="font-size: 22px;"></i></a>
+        </div>
+    </div>
+    <br>
+    <h3 style="display: inline-block; margin-left:45%; ">Cart</h3>
+    <button id = "checkout" class="btn btn-success" onclick = "checkOut();" style="float:right; margin-right: 5%; margin-top: 5%;">Checkout</button>
+
+    <div id="cart_data" >
+        <h2 style="color: gray; text-align:center; margin: 10% 0;">No data found. Add some products to cart.</h2>
+    </div>
+
+    <div id="cart_login" >
+        <a href="user.html" class="btn btn-primary" style="margin: 10% 50%; padding: 10px;">Login</a>
+    </div>
+
+    <div id="main_cart">
+    
+    </div>
+    <div class="modal">
+        <div id="item-desc" class="flex-container-center">
+            <h2>Product Description</h2>
+            <span id="close">&times;</span>
+            <br>
+            <hr>
+            <img id="item-img" src="" alt="Product Image">
+            <br><br>
+            <p id="desc"></p>
+            <button class="desc-button btn-success"></button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
