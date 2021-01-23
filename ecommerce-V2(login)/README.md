@@ -1,6 +1,6 @@
-## E-Commerce (V2)
+# E-Commerce (V2)
 
-# Features - 
+## Features - 
 
 1. User Register / Login
 
@@ -13,4 +13,5 @@
 Note - Whenever server restarts, your registered details get lost. So, you are required to register again to access.
 
 [Code Link](https://codequotient.com/project/getProjectCode?uniqueId=3p34g8fuq8kilqxxm8)
+
 [Project Link](https://ecommercev2-3p34g8fuq8kilqxxm8.codequotient.in/)
