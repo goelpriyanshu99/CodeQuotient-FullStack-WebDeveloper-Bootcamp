@@ -1,0 +1,60 @@
+<div class="header">
+    <strong><h4 id="userHead" style="float: left; color: white;"><%= disp %></h4></strong>
+    <div style="float:right; display: flex;">
+        <a href="/" id="home"><i class="material-icons" style="font-size: 25px;">home</i></a>
+        <a href = "cart.html"><i class="fa fa-shopping-cart" style="font-size: 22px;"></i></a>
+        <a href="user.html" class="btn btn-primary" id="login">Login</a>
+        <a href="user.html" id="profile"></a>
+        <a class="btn btn-danger" id="logout">Logout</a>
+    </div>
+</div>
+<br><br><br>
+
+<script>
+    var logged_in = '<%= user %>' ;
+    var login = document.getElementById("login");
+    var profile = document.getElementById("profile");
+    var logout = document.getElementById("logout");
+
+    // setting up header
+    if(logged_in === 'true')
+    {
+        login.style.display = "none";
+        logout.style.display = "inline";
+
+        var img = document.createElement('img');
+        img.style.width = '25px';
+        img.style.borderRadius = '50%';
+        img.setAttribute('src','<%= pic %>');
+        img.setAttribute('alt','Profile Pic');
+
+        profile.append(img);
+        profile.style.display = "inline";
+    }
+    else
+    {
+        login.style.display = "inline";
+        logout.style.display = "none";
+        profile.style.display = "none";
+    }
+
+    logout?.addEventListener('click', function()
+    {
+        request.open('POST','/logout');
+        request.send();
+
+        request.onload = function()
+        {
+            if(request.status === STATUS_OK)
+            {
+                alert('Logged out successful');
+                location.href = '/';
+            }
+            else
+            {
+                alert('Logged out not successful');
+            }
+        }
+    });
+
+</script>

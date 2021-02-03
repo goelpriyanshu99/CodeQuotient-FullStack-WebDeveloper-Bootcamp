@@ -1,0 +1,57 @@
+[
+    {
+        "id": "p001",
+        "img": "images/appleMacbook.jpg",
+        "desc": "The most consistent and exciting rumour for the MacBook Pro 2021 is the inclusion of a mini LED display, which will potentially offer superior contrast, wide colour gamut performance and HDR compared to existing Apple laptop displays."
+    },
+    {
+        "id": "p002",
+        "img": "images/leopardCoat.jpg",
+        "desc": "A good winter coat should keep you toasty and dry without making you look like a marshmallow. Our picks offer a range of styles, price points, size offerings and activity levels, so you can buy one that looks good, feels good, and actually lasts."
+    },
+    {
+        "id": "p003",
+        "img": "images/mouse.jpg",
+        "desc": "Wireless and Bluetooth Mouse Dell Multi-Device Wireless Keyboard and Mouse Combo. The new KM7120W offers 36 months battery life. 3 years Advanced Service and works perfectly with your Dell PCs."
+    },
+    {
+        "id": "p004",
+        "img": "images/NikeSkateShoe.jpg",
+        "desc": "Nike shoes are lightweight and durable - Despite provides exceptional comfort, flexibility, of Nike shoes are very light. If you buy a pair of Nike shoes for specific sports, you will definitely reap the benefits for a long time."
+    },
+    {
+        "id": "p005",
+        "img": "images/philipsLed.jpg",
+        "desc": "Philips Ultinon LED lights give you high-powered, automotive grade LEDs, with a lifetime up to 8 years. With conventional bulbs, the more powerful the light, the shorter its lifespan. Philips Ultinon LEDs deliver bright even light, yet have excellent resistance to heat and vibration."
+    },
+    {
+        "id": "p006",
+        "img": "images/PhilipsSpeaker.jpg",
+        "desc": "Philips Virtual Surround Sound produces rich and immersive surround sound from less than five-speaker system. Highly advanced spatial algorithms faithfully replicate the sonic characteristics that occur in an ideal 5.1-channel environment. Any high quality stereo source is transformed into true-to-life, multi-channel surround sound."
+    },
+    {
+        "id": "p007",
+        "img": "images/QuartzWatch.jpg",
+        "desc": "A quartz timepiece is powered by a battery that sends an electrical signal through a piece of crystal quartz. The quartz vibrates 32768 times per second, creating a signal with a precise frequency. The vibrations are measured by the circuit and converted into a single pulse every second."
+    },
+    {
+        "id": "p008",
+        "img": "images/suit.png",
+        "desc": "This wool-blend suit by Calvin Klein in classic blue has pick-stitched details that are subtle and sophisticated. A touch of stretch gives it an ideal and comfortable fit.74% wool, 21% polyester, 5% elastane.Two-button jacket.Notch lapel.Side vents.Pick-stitched details.Flat-front slacks, lined to the knee.Unhemmed for tailoring"
+    },
+    {
+        "id": "p009",
+        "img": "images/toy.jpg",
+        "desc": "Star Wars The Child Animatronic Edition 7.2-Inch-Tall Toy by Hasbro with Over 25 Sound and Motion Combinations, Toys for Kids Ages 4 and Up Cocomelon Musical Bedtime JJ Doll, with a Soft, Plush Tummy and Roto Head - Press Tummy and JJ Sings 'Yes, Yes, Bedtime Song,' Includes 1 Small Pillow Plush Teddy Bear - Bedtime Toys "
+    },
+    {
+        "id": "p010",
+        "img": "images/UsbCable.jpg",
+        "desc": "USB Type-C Cable 5pack 6ft Fast Charging 3A Rapid Charger Cord, Quick Charger Type C Cable Compatible S10 S9 S8 Plus,Nylon Braided USB C to USB A Fast Charging Cable for Note 10 9 8, LG V50 V40 G8 G7"
+    },
+    {
+        "id": "p011",
+        "img": "images/xiomiTv.jpg",
+        "desc": "A 47-inch 3D TV for the new generation Super slim and packed with features. Mi TV is virtually frameless. We use one of the best panels from Samsung and LG to create a 47' 1920x1080 Full HD television with a super slim profile and an 8.4mm frame."
+    }
+]

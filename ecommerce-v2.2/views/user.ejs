@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color:rgba(216, 168, 106, 0.514)">
+
+    
+    <% if(!login) { %>
+    <form id="loginUser">
+        <h2 style="margin-bottom: 10px;">Login</h2>
+        <strong><span id="logemailerr" style="color: rgb(230, 43, 43);"></span></strong>
+        <input type="email" name="email" id="logemail" placeholder="Enter your email" > <br/>
+        <strong><span id="logpasserr" style="color: rgb(230, 43, 43);"></span></strong>
+        <input type="password" name="password" id="logpassword" placeholder="Enter your password" ><br/>
+        <input type="submit" class="btn btn-success" onclick="userLogin()" style="margin-bottom:10px; display: inline-block;" value="Login">
+        <a href="/" class="btn btn-primary" style="margin-top: -10px; margin-left: 3%;">Home</a><br>
+        Don't have account? <a onclick="doRegister()" style="cursor: pointer; color:rgb(28, 119, 238);">Register here</a>
+    </form>
+
+    <form id="register" method="POST">
+        <h2>Register</h2>
+        <input type="text" name="name" id="name" placeholder="Enter your name" ><br/>
+        <input type="email" name="email" id="email" placeholder="Enter your email" ><br/>
+        <input type="password" name="password" id="password" placeholder="Enter your password" ><br/>
+        <input type="password" name="conPass" id="confirm" placeholder="Re-enter your password" ><br/>
+        <label for="profile_pic">Profile</label>
+        <input type="file" name="profile_pic" id="pic" accept="image/*" ><br><br>
+        <strong><span id="regerr" style="color: rgb(230, 43, 43);"></span></strong>
+        <input type='submit' onclick="userRegister()" class="btn btn-success"  style="margin-bottom:10px;" value="Register">
+        <a href="/" class="btn btn-primary" style="margin-top: -10px; margin-left: 3%;">Home</a><br>
+        Have an account? <a onclick="doLogin()" style="cursor: pointer; color:rgb(28, 119, 238);">Login</a>
+    </form>
+
+    <% } else { %>
+
+    <div id="detUser">
+        <h2 style="margin-bottom: 10px;">Details</h2>
+        <img src="<%= pic %>" alt="Profile Pic" style="display: block; margin: 0 auto; border-radius: 50%; width: 100px;">        <strong><label for="name">Name</label></strong>
+        <input type="text" value="<%= name %>" disabled><br/>
+        <strong><label for="email">E-Mail</label></strong>
+        <input type="email" value="<%= email %>" disabled> <br/>
+        <a class="btn btn-success" href="/" style="margin-bottom:10px;">Home</a><br>
+    </div>
+
+    <% } %>
+
+</body>
+<script src="js/user.js"></script>
+</html>

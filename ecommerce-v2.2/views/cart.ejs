@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>E-commerce</title>
+</head>
+<body>
+    
+    <%- include('./partials/header') %>
+    
+    <h3 align="center">Cart</h3>
+
+    <% if(user) {%>
+
+        <% if(!data.length) {%>
+            <h2 style="color: grey; text-align:center; margin: 8%;">No data found. Add some products to cart.</h2>
+        <% } else { %>  
+            <button class="btn btn-success" onclick = "checkOut();" style="float:right; margin-right: 5%; margin-top: 5%;">Checkout</button>
+
+            <div id="main_cart">
+                <% data.forEach( function(ele) { %>
+                    <div class="card" id="<%= ele['id'] %>">
+                        <img src="<%= ele['img'] %>" class="card-img-top" alt="<%= ele['prod_name'] %>">
+                        <div class="card-body">
+                            <h3 class="card-title"><%= ele['prod_name'] %></h3>
+                            <p class="card-text">Price : ₹ <%= ele['prod_price'] %></p>
+                            <div>
+                                <p class="card-text" style="float: left;">Quantity : <span id="<%= ele['id'] %>qty"><%= ele['qty'] %></span></p>
+                                <div>
+                                    <button id="<%= ele['id'] %>" class="btn btn-primary" onclick="plus(this.id)" style="margin-left: 12px;">&plus;</button>
+                                    <button id="<%= ele['id'] %>" class="btn btn-primary" onclick="minus(this.id)" style="margin-left: 8px;">&minus;</button>
+                                </div>
+                            </div>
+                            <br>
+                            <a id="<%= ele['id'] %>" onclick="removeCart(this.id)" class="btn btn-danger %>">Remove from cart</a>
+                            <a id="<%= ele['id'] %>" onclick="desc(this.id)" class="btn btn-info">View Desc</a>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        <% } %>
+
+    <% } else { %>
+            <h2 style="color: grey; text-align: center; margin-top: 8%;">You have to login first</h2>        
+    <% } %>
+    <div class="modal">
+        <div id="item-desc" class="flex-container-center">
+            <h2>Product Description</h2>
+            <span id="close">&times;</span>
+            <br>
+            <hr>
+            <img id="item-img" src="" alt="Product Image">
+            <br><br>
+            <p id="desc"></p>
+            <button class="desc-button btn-success"></button>
+        </div>
+    </div>
+</body>
+<script src="js/cart.js"></script>
+</html>
